@@ -78,10 +78,12 @@ Function definitions:
 
 ```js
 function distance(a, b) {
+  // the smaller, the closer
   return <Number>
 }
 
 function linkage(distances) {
+  // the smaller, the more similar
   return <Number>
 }
 ```
