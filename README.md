@@ -9,7 +9,7 @@
 [![Downloads][downloads-image]][downloads-url]
 [![Gittip][gittip-image]][gittip-url]
 
-Hierarchical clustering based on [How to Explain Hierarchical Clustering](http://www.analytictech.com/networks/hiclus.htm).
+Agglomerative Hierarchical clustering based on [How to Explain Hierarchical Clustering](http://www.analytictech.com/networks/hiclus.htm).
 
 ## Example
 
@@ -70,7 +70,7 @@ Options:
 
 - `.input <Array> (required)` - input array
 - `.distance <Function> (required)` - distance function
-- `.linkage <Function> (required)` - linkage function
+- `.linkage <Function> (required)` - linkage function or string of 'single', 'complete or 'average'
 - `.minClusters <Integer> (1)` - number of clusters you want to iterate to
 - `.maxLinkage <Integer> (Infinity)` - maximum linkage until you stop iteration
 
