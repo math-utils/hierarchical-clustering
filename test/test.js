@@ -43,7 +43,7 @@ describe('Colors', function () {
     var levels = cluster({
       input: colors,
       distance: euclideanDistance,
-      linkage: 'single',
+      linkage: 'complete',
     })
     assert(levels.length === 7)
     var last = levels[levels.length - 1]
@@ -55,7 +55,7 @@ describe('Colors', function () {
     var levels = cluster({
       input: colors,
       distance: euclideanDistance,
-      linkage: 'single',
+      linkage: 'average',
     })
     assert(levels.length === 7)
     var last = levels[levels.length - 1]
