@@ -27,6 +27,42 @@ describe('Colors', function () {
     assert(last.clusters[0].length === 7)
   })
 
+  it('should cluster (predefined single)', function () {
+    var levels = cluster({
+      input: colors,
+      distance: euclideanDistance,
+      linkage: 'single',
+    })
+    assert(levels.length === 7)
+    var last = levels[levels.length - 1]
+    assert(last.clusters.length === 1)
+    assert(last.clusters[0].length === 7)
+  })
+
+  it('should cluster (predefined complete)', function () {
+    var levels = cluster({
+      input: colors,
+      distance: euclideanDistance,
+      linkage: 'single',
+    })
+    assert(levels.length === 7)
+    var last = levels[levels.length - 1]
+    assert(last.clusters.length === 1)
+    assert(last.clusters[0].length === 7)
+  })
+
+  it('should cluster (predefined average)', function () {
+    var levels = cluster({
+      input: colors,
+      distance: euclideanDistance,
+      linkage: 'single',
+    })
+    assert(levels.length === 7)
+    var last = levels[levels.length - 1]
+    assert(last.clusters.length === 1)
+    assert(last.clusters[0].length === 7)
+  })
+
   it('should support min clusters', function () {
     var levels = cluster({
       input: colors,
