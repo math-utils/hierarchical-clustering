@@ -25,6 +25,8 @@ describe('Colors', function () {
     var last = levels[levels.length - 1]
     assert(last.clusters.length === 1)
     assert(last.clusters[0].length === 7)
+    assert(last.from === 0)
+    assert(last.to === 1)
   })
 
   it('should cluster (predefined single)', function () {
@@ -37,6 +39,8 @@ describe('Colors', function () {
     var last = levels[levels.length - 1]
     assert(last.clusters.length === 1)
     assert(last.clusters[0].length === 7)
+    assert(last.from === 0)
+    assert(last.to === 1)
   })
 
   it('should cluster (predefined complete)', function () {
@@ -49,6 +53,8 @@ describe('Colors', function () {
     var last = levels[levels.length - 1]
     assert(last.clusters.length === 1)
     assert(last.clusters[0].length === 7)
+    assert(last.from === 0)
+    assert(last.to === 1)
   })
 
   it('should cluster (predefined average)', function () {
@@ -61,6 +67,8 @@ describe('Colors', function () {
     var last = levels[levels.length - 1]
     assert(last.clusters.length === 1)
     assert(last.clusters[0].length === 7)
+    assert(last.from === 0)
+    assert(last.to === 1)
   })
 
   it('should support min clusters', function () {
@@ -73,6 +81,8 @@ describe('Colors', function () {
     assert(levels.length === 5)
     var last = levels[levels.length - 1]
     assert(last.clusters.length === 3)
+    assert(last.from === 1)
+    assert(last.to === 2)
 
     // match it against the example
     last.clusters.forEach(function (cluster) {
